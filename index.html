@@ -1196,15 +1196,31 @@
 
 
    <div class="tabs-scroll">
-<button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="PANEER_SABJI">🧀 Paneer Sabji</button>
-<button class="tab" data-cat="VEG_SABJI">🥦 Veg Sabji</button>
-<button class="tab" data-cat="RICE">🍚 Rice - Biryani</button>
-<button class="tab" data-cat="ROTI">🫓 Roti</button>
-<button class="tab" data-cat="DRINK">🍹 Drinks</button>
-<button class="tab" data-cat="PAPAD">🥨 Papad</button>
-<button class="tab" data-cat="THALI">🍱 Thali</button>
-<button class="tab" data-cat="1_KG_SABJI">📦 1 KG Sabji</button>
+<button class="tab active" data-cat="all">🍽️ All Items (सर्व पदार्थ)</button>
+
+<button class="tab" data-cat="NON_VEG_CHINESE">🍗 Non-Veg Chinese (नॉन-व्हेज चायनीज)</button>
+
+<button class="tab" data-cat="NON_VEG">🍲 Non-Veg Main Course (नॉन-व्हेज मेन कोर्स)</button>
+
+<button class="tab" data-cat="NON_VEG_INDIAN">🍳 Non-Veg Indian (नॉन-व्हेज इंडियन)</button>
+
+<button class="tab" data-cat="NON_VEG_SOUP">🥣 Non-Veg Soup (नॉन-व्हेज सूप)</button>
+
+<button class="tab" data-cat="VEG_CHINESE">🥢 Veg Chinese (व्हेज चायनीज)</button>
+
+<button class="tab" data-cat="VEG_MAINU">🥦 Veg Main Course (व्हेज मेन कोर्स)</button>
+
+<button class="tab" data-cat="VEG_STARTER">🥗 Veg Starter (व्हेज स्टार्टर)</button>
+
+<button class="tab" data-cat="VEG_SOUP">🍲 Veg Soup (व्हेज सूप)</button>
+
+<button class="tab" data-cat="FISH">🐟 Fish Special (मासे स्पेशल)</button>
+
+<button class="tab" data-cat="THALI">🍱 Thali (थाळी)</button>
+
+<button class="tab" data-cat="RICE">🍚 Rice Items (भात प्रकार)</button>
+
+<button class="tab" data-cat="ROTI_BASKET">🫓 Roti Basket (रोटी बास्केट)</button>
    </div>  
                 </div>
             </div>
@@ -1350,17 +1366,138 @@
         // Menu Data - FIXED VERSION
         const data = [
 
+{ "id": 99, "cat": "VEG_STARTER", "name": "Alu Jira (आलू जिरा)", "price": "100.00 RS", "desc": "Alu Jira", "tags": ["Veg"], "img": "img/alu_jira.jpeg" },
+{ "id": 100, "cat": "VEG_STARTER", "name": "Roasted Papad (रोस्टेड पापड)", "price": "20.00 RS", "desc": "Roasted Papad", "tags": ["Veg"], "img": "img/roasted_papad.jpeg" },
+{ "id": 101, "cat": "VEG_STARTER", "name": "Fry Papad (फ्राय पापड)", "price": "20.00 RS", "desc": "Fry Papad", "tags": ["Veg"], "img": "img/fry_papad.jpeg" },
+{ "id": 102, "cat": "VEG_STARTER", "name": "Rice Papad (राईस पापड)", "price": "40.00 RS", "desc": "Rice Papad", "tags": ["Veg"], "img": "img/rice_papad.jpeg" },
+{ "id": 103, "cat": "VEG_STARTER", "name": "Nagali Papad (नागली पापड)", "price": "40.00 RS", "desc": "Nagali Papad", "tags": ["Veg"], "img": "img/nagali_papad.jpeg" },
+{ "id": 104, "cat": "VEG_STARTER", "name": "Green Salad (ग्रीन सॅलड)", "price": "80.00 RS", "desc": "Green Salad", "tags": ["Veg"], "img": "img/green_salad.jpeg" },
+{ "id": 105, "cat": "VEG_STARTER", "name": "Chana Koliwada (चणा कोळीवाडा)", "price": "120.00 RS", "desc": "Chana Koliwada", "tags": ["Veg"], "img": "img/chana_koliwada.jpeg" },
+{ "id": 106, "cat": "VEG_STARTER", "name": "Paneer Chips (पनीर चिप्स)", "price": "100.00 RS", "desc": "Paneer Chips", "tags": ["Veg"], "img": "img/paneer_chips.jpeg" },
+{ "id": 107, "cat": "VEG_CHINESE", "name": "Veg Manchurian Half (वेज मंचूरियन हाफ)", "price": "80.00 RS", "desc": "Veg Manchurian Half", "tags": ["Veg"], "img": "img/veg_manchurian_half.jpeg" },
+{ "id": 108, "cat": "VEG_CHINESE", "name": "Veg Manchurian Full (वेज मंचूरियन फुल)", "price": "130.00 RS", "desc": "Veg Manchurian Full", "tags": ["Veg"], "img": "img/veg_manchurian_full.jpeg" },
+{ "id": 109, "cat": "VEG_CHINESE", "name": "Veg Crispy (वेज क्रिस्पी)", "price": "150.00 RS", "desc": "Veg Crispy", "tags": ["Veg"], "img": "img/veg_crispy.jpeg" },
+{ "id": 110, "cat": "VEG_CHINESE", "name": "Veg 65 (वेज ६५)", "price": "150.00 RS", "desc": "Veg 65", "tags": ["Veg"], "img": "img/veg_65.jpeg" },
+{ "id": 111, "cat": "VEG_CHINESE", "name": "Paneer Chilly Half (पनीर चिली हाफ)", "price": "100.00 RS", "desc": "Paneer Chilly Half", "tags": ["Veg"], "img": "img/paneer_chilly_half.jpeg" },
+{ "id": 112, "cat": "VEG_CHINESE", "name": "Paneer Chilly Full (पनीर चिली फुल)", "price": "170.00 RS", "desc": "Paneer Chilly Full", "tags": ["Veg"], "img": "img/paneer_chilly_full.jpeg" },
+{ "id": 113, "cat": "VEG_CHINESE", "name": "Paneer Manchurian Half (पनीर मंचूरियन हाफ)", "price": "100.00 RS", "desc": "Paneer Manchurian Half", "tags": ["Veg"], "img": "img/paneer_manchurian_half.jpeg" },
+{ "id": 114, "cat": "VEG_CHINESE", "name": "Paneer Manchurian Full (पनीर मंचूरियन फुल)", "price": "170.00 RS", "desc": "Paneer Manchurian Full", "tags": ["Veg"], "img": "img/paneer_manchurian_full.jpeg" },
+{ "id": 115, "cat": "VEG_CHINESE", "name": "Paneer Crispy (पनीर क्रिस्पी)", "price": "200.00 RS", "desc": "Paneer Crispy", "tags": ["Veg"], "img": "img/paneer_crispy.jpeg" },
+{ "id": 116, "cat": "VEG_CHINESE", "name": "Paneer 65 (पनीर ६५)", "price": "170.00 RS", "desc": "Paneer 65", "tags": ["Veg"], "img": "img/paneer_65.jpeg" },
+          
 
 
+{ "id": 68, "cat": "NON_VEG_CHINESE", "name": "Chicken Manchurian Half (चिकन मंचूरियन हाफ)", "price": "80.00 RS", "desc": "Chicken Manchurian Half", "tags": ["Non-Veg"], "img": "img/chicken_manchurian_half.jpeg" },
+{ "id": 69, "cat": "NON_VEG_CHINESE", "name": "Chicken Manchurian Full (चिकन मंचूरियन फुल)", "price": "130.00 RS", "desc": "Chicken Manchurian Full", "tags": ["Non-Veg"], "img": "img/chicken_manchurian_full.jpeg" },
+{ "id": 70, "cat": "NON_VEG_CHINESE", "name": "Chicken 65 (चिकन ६५)", "price": "170.00 RS", "desc": "Chicken 65", "tags": ["Non-Veg"], "img": "img/chicken_65.jpeg" },
+{ "id": 71, "cat": "NON_VEG_CHINESE", "name": "Chicken Koliwada (चिकन कोळीवाडा)", "price": "200.00 RS", "desc": "Chicken Koliwada", "tags": ["Non-Veg"], "img": "img/chicken_koliwada.jpeg" },
+{ "id": 72, "cat": "NON_VEG_CHINESE", "name": "Chicken Oil Fry (चिकन ऑइल फ्राय)", "price": "200.00 RS", "desc": "Chicken Oil Fry", "tags": ["Non-Veg"], "img": "img/chicken_oil_fry.jpeg" },
+{ "id": 73, "cat": "NON_VEG_CHINESE", "name": "Chicken Crispy (चिकन क्रिस्पी)", "price": "220.00 RS", "desc": "Chicken Crispy", "tags": ["Non-Veg"], "img": "img/chicken_crispy.jpeg" },
+{ "id": 74, "cat": "NON_VEG_CHINESE", "name": "Chicken Hakka Noodles Half (चिकन हक्का नूडल्स हाफ)", "price": "70.00 RS", "desc": "Chicken Hakka Noodles Half", "tags": ["Non-Veg"], "img": "img/chicken_hakka_noodles_half.jpeg" },
+{ "id": 75, "cat": "NON_VEG_CHINESE", "name": "Chicken Hakka Noodles Full (चिकन हक्का नूडल्स फुल)", "price": "120.00 RS", "desc": "Chicken Hakka Noodles Full", "tags": ["Non-Veg"], "img": "img/chicken_hakka_noodles_full.jpeg" },
+{ "id": 76, "cat": "NON_VEG_CHINESE", "name": "Chicken Schezwan Noodles Half (चिकन शेजवान नूडल्स हाफ)", "price": "80.00 RS", "desc": "Chicken Schezwan Noodles Half", "tags": ["Non-Veg"], "img": "img/chicken_schezwan_noodles_half.jpeg" },
+{ "id": 77, "cat": "NON_VEG_CHINESE", "name": "Chicken Schezwan Noodles Full (चिकन शेजवान नूडल्स फुल)", "price": "150.00 RS", "desc": "Chicken Schezwan Noodles Full", "tags": ["Non-Veg"], "img": "img/chicken_schezwan_noodles_full.jpeg" },
+{ "id": 78, "cat": "NON_VEG_CHINESE", "name": "Chicken Triple Noodles Half (चिकन ट्रिपल नूडल्स हाफ)", "price": "120.00 RS", "desc": "Chicken Triple Noodles Half", "tags": ["Non-Veg"], "img": "img/chicken_triple_noodles_half.jpeg" },
+{ "id": 79, "cat": "NON_VEG_CHINESE", "name": "Chicken Triple Noodles Full (चिकन ट्रिपल नूडल्स फुल)", "price": "190.00 RS", "desc": "Chicken Triple Noodles Full", "tags": ["Non-Veg"], "img": "img/chicken_triple_noodles_full.jpeg" },
+{ "id": 80, "cat": "NON_VEG_CHINESE", "name": "Chicken Singapore Noodles (चिकन सिंगापूर नूडल्स)", "price": "150.00 RS", "desc": "Chicken Singapore Noodles", "tags": ["Non-Veg"], "img": "img/chicken_singapore_noodles.jpeg" },
+{ "id": 81, "cat": "NON_VEG_CHINESE", "name": "Chicken Chilly Noodles Half (चिकन चिली नूडल्स हाफ)", "price": "120.00 RS", "desc": "Chicken Chilly Noodles Half", "tags": ["Non-Veg"], "img": "img/chicken_chilly_noodles_half.jpeg" },
+{ "id": 82, "cat": "NON_VEG_CHINESE", "name": "Chicken Chilly Noodles Full (चिकन चिली नूडल्स फुल)", "price": "190.00 RS", "desc": "Chicken Chilly Noodles Full", "tags": ["Non-Veg"], "img": "img/chicken_chilly_noodles_full.jpeg" },
+{ "id": 83, "cat": "NON_VEG_CHINESE", "name": "Chicken Lollipop Noodles Half (चिकन लॉलीपॉप नूडल्स हाफ)", "price": "120.00 RS", "desc": "Chicken Lollipop Noodles Half", "tags": ["Non-Veg"], "img": "img/chicken_lollipop_noodles_half.jpeg" },
+{ "id": 84, "cat": "NON_VEG_CHINESE", "name": "Chicken Lollipop Noodles Full (चिकन लॉलीपॉप नूडल्स फुल)", "price": "190.00 RS", "desc": "Chicken Lollipop Noodles Full", "tags": ["Non-Veg"], "img": "img/chicken_lollipop_noodles_full.jpeg" },
+{ "id": 85, "cat": "NON_VEG_CHINESE", "name": "Chicken Chilly Half (चिकन चिली हाफ)", "price": "80.00 RS", "desc": "Chicken Chilly Half", "tags": ["Non-Veg"], "img": "img/chicken_chilly_half.jpeg" },
+{ "id": 86, "cat": "NON_VEG_CHINESE", "name": "Chicken Chilly Full (चिकन चिली फुल)", "price": "130.00 RS", "desc": "Chicken Chilly Full", "tags": ["Non-Veg"], "img": "img/chicken_chilly_full.jpeg" },
+{ "id": 87, "cat": "NON_VEG_CHINESE", "name": "Chicken Lollipop Oil Fry Half (चिकन लॉलीपॉप ऑइल फ्राय हाफ)", "price": "80.00 RS", "desc": "Chicken Lollipop Oil Fry Half", "tags": ["Non-Veg"], "img": "img/chicken_lollipop_oil_fry_half.jpeg" },
+{ "id": 88, "cat": "NON_VEG_CHINESE", "name": "Chicken Lollipop Oil Fry Full (चिकन लॉलीपॉप ऑइल फ्राय फुल)", "price": "150.00 RS", "desc": "Chicken Lollipop Oil Fry Full", "tags": ["Non-Veg"], "img": "img/chicken_lollipop_oil_fry_full.jpeg" },
+{ "id": 89, "cat": "NON_VEG_CHINESE", "name": "Chicken Lollipop Masala Dry Half (चिकन लॉलीपॉप मसाला ड्राय हाफ)", "price": "90.00 RS", "desc": "Chicken Lollipop Masala Dry Half", "tags": ["Non-Veg"], "img": "img/chicken_lollipop_masala_dry_half.jpeg" },
+{ "id": 90, "cat": "NON_VEG_CHINESE", "name": "Chicken Lollipop Masala Dry Full (चिकन लॉलीपॉप मसाला ड्राय फुल)", "price": "150.00 RS", "desc": "Chicken Lollipop Masala Dry Full", "tags": ["Non-Veg"], "img": "img/chicken_lollipop_masala_dry_full.jpeg" },
+{ "id": 91, "cat": "NON_VEG_CHINESE", "name": "Chicken Fried Rice Half (चिकन फ्राइड राइस हाफ)", "price": "70.00 RS", "desc": "Chicken Fried Rice Half", "tags": ["Non-Veg"], "img": "img/chicken_fried_rice_half.jpeg" },
+{ "id": 92, "cat": "NON_VEG_CHINESE", "name": "Chicken Fried Rice Full (चिकन फ्राइड राइस फुल)", "price": "120.00 RS", "desc": "Chicken Fried Rice Full", "tags": ["Non-Veg"], "img": "img/chicken_fried_rice_full.jpeg" },
+{ "id": 93, "cat": "NON_VEG_CHINESE", "name": "Egg Rice Half (अंडी राइस हाफ)", "price": "70.00 RS", "desc": "Egg Rice Half", "tags": ["Non-Veg"], "img": "img/egg_rice_half.jpeg" },
+{ "id": 94, "cat": "NON_VEG_CHINESE", "name": "Egg Rice Full (अंडी राइस फुल)", "price": "120.00 RS", "desc": "Egg Rice Full", "tags": ["Non-Veg"], "img": "img/egg_rice_full.jpeg" },
+{ "id": 95, "cat": "NON_VEG_CHINESE", "name": "Chicken Schezwan Rice Half (चिकन शेजवान राइस हाफ)", "price": "90.00 RS", "desc": "Chicken Schezwan Rice Half", "tags": ["Non-Veg"], "img": "img/chicken_schezwan_rice_half.jpeg" },
+{ "id": 96, "cat": "NON_VEG_CHINESE", "name": "Chicken Schezwan Rice Full (चिकन शेजवान राइस फुल)", "price": "140.00 RS", "desc": "Chicken Schezwan Rice Full", "tags": ["Non-Veg"], "img": "img/chicken_schezwan_rice_full.jpeg" },
+{ "id": 97, "cat": "NON_VEG_CHINESE", "name": "Chicken Triple Rice Half (चिकन ट्रिपल राइस हाफ)", "price": "120.00 RS", "desc": "Chicken Triple Rice Half", "tags": ["Non-Veg"], "img": "img/chicken_triple_rice_half.jpeg" },
+{ "id": 98, "cat": "NON_VEG_CHINESE", "name": "Chicken Triple Rice Full (चिकन ट्रिपल राइस फुल)", "price": "190.00 RS", "desc": "Chicken Triple Rice Full", "tags": ["Non-Veg"], "img": "img/chicken_triple_rice_full.jpeg" },     
 
 
+  { "id": 1, "cat": "NON_VEG", "name": "Gavran Handi (गावरान हंडी)", "price": "1400.00 RS", "desc": "Authentic Gavran Handi", "tags": ["Non-Veg"], "img": "img/gavran_handi.jpeg" },
+  { "id": 2, "cat": "NON_VEG", "name": "Chicken Handi Full (चिकन हंडी फुल)", "price": "700.00 RS", "desc": "Broiler Chicken Handi Full", "tags": ["Non-Veg"], "img": "img/chicken_handi_full.jpeg" },
+  { "id": 3, "cat": "NON_VEG", "name": "Chicken Handi Half (चिकन हंडी हाफ)", "price": "350.00 RS", "desc": "Broiler Chicken Handi Half", "tags": ["Non-Veg"], "img": "img/chicken_handi_half.jpeg" },
+  { "id": 4, "cat": "NON_VEG", "name": "Mutton Handi (मटण हंडी)", "price": "200.00 RS", "desc": "Mutton Handi Special", "tags": ["Non-Veg"], "img": "img/mutton_handi.jpeg" },
+  { "id": 5, "cat": "NON_VEG", "name": "Chicken Masala (चिकन मसाला)", "price": "150.00 RS", "desc": "Spicy Chicken Masala", "tags": ["Non-Veg"], "img": "img/chicken_masala.jpeg" },
+  { "id": 6, "cat": "NON_VEG", "name": "Gavran Chicken Masala (गावरान चिकन मसाला)", "price": "200.00 RS", "desc": "Gavran Style Chicken Masala", "tags": ["Non-Veg"], "img": "img/gavran_chicken_masala.jpeg" },
+  { "id": 7, "cat": "NON_VEG", "name": "Lever Peta Masala (लिव्हर पेटा मसाला)", "price": "0.00 RS", "desc": "Special Lever Peta Masala", "tags": ["Non-Veg"], "img": "img/lever_peta.jpeg" },
+  { "id": 8, "cat": "NON_VEG", "name": "Mundi Plet (मुंडी प्लेट)", "price": "150.00 RS", "desc": "Mundi Plate Special", "tags": ["Non-Veg"], "img": "img/mundi_plet.jpeg" },
+  { "id": 9, "cat": "NON_VEG", "name": "Vajari (वजरी)", "price": "120.00 RS", "desc": "Traditional Vajari Dish", "tags": ["Non-Veg"], "img": "img/vajari.jpeg" },
+          
+  { "id": 10, "cat": "VEG_MAINU", "name": "Dal Fry (डाळ फ्राय)", "price": "100.00 RS", "desc": "Yellow Dal Fry", "tags": ["Veg"], "img": "img/dal_fry.jpeg" },
+  { "id": 11, "cat": "VEG_MAINU", "name": "Dal Tadkka (डाळ तडका)", "price": "120.00 RS", "desc": "Dal with Special Tadka", "tags": ["Veg"], "img": "img/dal_tadkka.jpeg" },
+  { "id": 12, "cat": "VEG_MAINU", "name": "Paneer Masala (पनीर मसाला)", "price": "120.00 RS", "desc": "Rich Paneer Masala", "tags": ["Veg"], "img": "img/paneer_masala.jpeg" },
+  { "id": 13, "cat": "VEG_MAINU", "name": "Matar Paneer (मटार पनीर)", "price": "120.00 RS", "desc": "Paneer and Green Peas", "tags": ["Veg"], "img": "img/matar_paneer.jpeg" },
+  { "id": 14, "cat": "VEG_MAINU", "name": "Alu Matar (आलू मटार)", "price": "120.00 RS", "desc": "Potato and Green Peas", "tags": ["Veg"], "img": "img/alu_matar.jpeg" },
+  { "id": 15, "cat": "VEG_MAINU", "name": "Bhendi Masala (भेंडी मसाला)", "price": "120.00 RS", "desc": "Spicy Bhendi Masala", "tags": ["Veg"], "img": "img/bhendi_masala.jpeg" },
+  { "id": 16, "cat": "VEG_MAINU", "name": "Bhendi Fry (भेंडी फ्राय)", "price": "120.00 RS", "desc": "Crispy Bhendi Fry", "tags": ["Veg"], "img": "img/bhendi_fry.jpeg" },
 
+  { "id": 17, "cat": "NON_VEG_INDIAN", "name": "Egg Boil (अंडे उकडलेले)", "price": "40.00 RS", "desc": "Boiled Eggs", "tags": ["Non-Veg"], "img": "img/egg_boil.jpeg" },
+  { "id": 18, "cat": "NON_VEG_INDIAN", "name": "Egg Bhurji (अंडा भुर्जी)", "price": "50.00 RS", "desc": "Scrambled Eggs with Spices", "tags": ["Non-Veg"], "img": "img/egg_bhurji.jpeg" },
+  { "id": 19, "cat": "NON_VEG_INDIAN", "name": "Egg Omelette (अंडा ऑम्लेट)", "price": "50.00 RS", "desc": "Classic Egg Omelette", "tags": ["Non-Veg"], "img": "img/egg_amlet.jpeg" },
+  { "id": 20, "cat": "NON_VEG_INDIAN", "name": "Egg Half Fry (अंडा हाफ फ्राय)", "price": "50.00 RS", "desc": "Egg Sunny Side Up", "tags": ["Non-Veg"], "img": "img/egg_half_fry.jpeg" },
+  { "id": 21, "cat": "NON_VEG_INDIAN", "name": "Egg Chilly Full (अंडा चिली फुल)", "price": "130.00 RS", "desc": "Spicy Egg Chilly Full", "tags": ["Non-Veg"], "img": "img/egg_chilly_full.jpeg" },
+  { "id": 22, "cat": "NON_VEG_INDIAN", "name": "Egg Chilly Half (अंडा चिली हाफ)", "price": "70.00 RS", "desc": "Spicy Egg Chilly Half", "tags": ["Non-Veg"], "img": "img/egg_chilly_half.jpeg" },
+  { "id": 23, "cat": "NON_VEG_INDIAN", "name": "Egg Masala (अंडा मसाला)", "price": "100.00 RS", "desc": "Egg Curry in Masala Gravy", "tags": ["Non-Veg"], "img": "img/egg_masala.jpeg" },
+          
+  { "id": 24, "cat": "FISH", "name": "Vom Tava & Rava Fry (वोम तवा आणि रवा फ्राय)", "price": "APS", "desc": "Vom Fish Fry", "tags": ["Non-Veg"], "img": "img/vom_fry.jpeg" },
+  { "id": 25, "cat": "FISH", "name": "Bangda Tava & Rava Fry (बांगडा तवा आणि रवा फ्राय)", "price": "APS", "desc": "Bangda Fish Fry", "tags": ["Non-Veg"], "img": "img/bangda_fry.jpeg" },
+  { "id": 26, "cat": "FISH", "name": "Bombil Tava & Rava Fry (बोंबील तवा आणि रवा फ्राय)", "price": "APS", "desc": "Bombil Fish Fry", "tags": ["Non-Veg"], "img": "img/bombil_fry.jpeg" },
+  { "id": 27, "cat": "FISH", "name": "Mandelli Fry (मांदेली फ्राय)", "price": "APS", "desc": "Crispy Mandelli Fry", "tags": ["Non-Veg"], "img": "img/mandelliy_fry.jpeg" },
+  { "id": 28, "cat": "FISH", "name": "Surmai Tava & Rava (सुरमई तवा आणि रवा)", "price": "APS", "desc": "Premium Surmai Fry", "tags": ["Non-Veg"], "img": "img/surmai_fry.jpeg" },
+          
+  { "id": 29, "cat": "THALI", "name": "Veg Thali (व्हेज थाळी)", "price": "80.00 RS", "desc": "Complete Vegetarian Meal", "tags": ["Veg"], "img": "img/veg_thali.jpeg" },
+  { "id": 30, "cat": "THALI", "name": "Chicken Thali (चिकन थाळी)", "price": "120.00 RS", "desc": "Chicken Meal with Gravy and Roti", "tags": ["Non-Veg"], "img": "img/chicken_thali.jpeg" },
+  { "id": 31, "cat": "THALI", "name": "Machi Thali (मासे थाळी)", "price": "APS", "desc": "Fish Thali Special", "tags": ["Non-Veg"], "img": "img/machi_thali.jpeg" },
+  { "id": 32, "cat": "THALI", "name": "Egg Thali (अंडा थाळी)", "price": "120.00 RS", "desc": "Egg Curry Meal", "tags": ["Non-Veg"], "img": "img/egg_thali.jpeg" },
+  { "id": 33, "cat": "THALI", "name": "Gavran Chicken Thali (गावरान चिकन थाळी)", "price": "220.00 RS", "desc": "Authentic Gavran Chicken Meal", "tags": ["Non-Veg"], "img": "img/gavran_chicken_thali.jpeg" },
+          
+  { "id": 35, "cat": "RICE", "name": "Chicken Chopper Rice Full (चिकन चॉपर राइस फुल)", "price": "190.00 RS", "desc": "Chicken Chopper Rice Full", "tags": ["Non-Veg"], "img": "img/chicken_chopper_rice_full.jpeg" },
+  { "id": 36, "cat": "RICE", "name": "Chicken Chopper Rice Half (चिकन चॉपर राइस हाफ)", "price": "120.00 RS", "desc": "Chicken Chopper Rice Half", "tags": ["Non-Veg"], "img": "img/chicken_chopper_rice_half.jpeg" },
+  { "id": 37, "cat": "RICE", "name": "Chicken Sherpa Rice Full (चिकन शेर्पा राइस फुल)", "price": "190.00 RS", "desc": "Chicken Sherpa Rice Full", "tags": ["Non-Veg"], "img": "img/chicken_sherpa_rice_full.jpeg" },
+  { "id": 38, "cat": "RICE", "name": "Chicken Sherpa Rice Half (चिकन शेर्पा राइस हाफ)", "price": "120.00 RS", "desc": "Chicken Sherpa Rice Half", "tags": ["Non-Veg"], "img": "img/chicken_sherpa_rice_half.jpeg" },
+  { "id": 39, "cat": "RICE", "name": "Chicken Hongkong Rice (चिकन हाँगकाँग राइस)", "price": "150.00 RS", "desc": "Chicken Hongkong Rice", "tags": ["Non-Veg"], "img": "img/chicken_hongkong_rice.jpeg" },
+  { "id": 40, "cat": "RICE", "name": "Chicken Two In One Rice Full (चिकन टू इन वन राइस फुल)", "price": "160.00 RS", "desc": "Chicken Two In One Rice Full", "tags": ["Non-Veg"], "img": "img/chicken_two_in_one_rice_full.jpeg" },
+  { "id": 41, "cat": "RICE", "name": "Chicken Two In One Rice Half (चिकन टू इन वन राइस हाफ)", "price": "90.00 RS", "desc": "Chicken Two In One Rice Half", "tags": ["Non-Veg"], "img": "img/chicken_two_in_one_rice_half.jpeg" },
+  { "id": 42, "cat": "RICE", "name": "Chicken Chilly Rice Full (चिकन चिली राइस फुल)", "price": "190.00 RS", "desc": "Chicken Chilly Rice Full", "tags": ["Non-Veg"], "img": "img/chicken_chilly_rice_full.jpeg" },
+  { "id": 43, "cat": "RICE", "name": "Chicken Chilly Rice Half (चिकन चिली राइस हाफ)", "price": "120.00 RS", "desc": "Chicken Chilly Rice Half", "tags": ["Non-Veg"], "img": "img/chicken_chilly_rice_half.jpeg" },
+  { "id": 44, "cat": "RICE", "name": "Chicken Lollipop Rice (चिकन लॉलीपॉप राइस)", "price": "120.00 RS", "desc": "Chicken Lollipop Rice", "tags": ["Non-Veg"], "img": "img/chicken_lollipop_rice.jpeg" },
+          
+  { "id": 45, "cat": "NON_VEG_SOUP", "name": "Chicken Manchurian Soup Full (चिकन मंचुरियन सूप फुल)", "price": "100.00 RS", "desc": "Chicken Manchurian Soup Full", "tags": ["Non-Veg"], "img": "img/chicken_manchurian_soup_full.jpeg" },
+  { "id": 46, "cat": "NON_VEG_SOUP", "name": "Chicken Manchurian Soup Half (चिकन मंचुरियन सूप हाफ)", "price": "50.00 RS", "desc": "Chicken Manchurian Soup Half", "tags": ["Non-Veg"], "img": "img/chicken_manchurian_soup_half.jpeg" },
+  { "id": 47, "cat": "NON_VEG_SOUP", "name": "Chicken Schezwan Soup Full (चिकन शेजवान सूप फुल)", "price": "100.00 RS", "desc": "Chicken Schezwan Soup Full", "tags": ["Non-Veg"], "img": "img/chicken_schezwan_soup_full.jpeg" },
+  { "id": 48, "cat": "NON_VEG_SOUP", "name": "Chicken Schezwan Soup Half (चिकन शेजवान सूप हाफ)", "price": "50.00 RS", "desc": "Chicken Schezwan Soup Half", "tags": ["Non-Veg"], "img": "img/chicken_schezwan_soup_half.jpeg" },
+  { "id": 49, "cat": "NON_VEG_SOUP", "name": "Chicken Hot Soup Full (चिकन हॉट सूप फुल)", "price": "150.00 RS", "desc": "Chicken Hot Soup Full", "tags": ["Non-Veg"], "img": "img/chicken_hot_soup_full.jpeg" },
+  { "id": 50, "cat": "NON_VEG_SOUP", "name": "Chicken Hot Soup Half (चिकन हॉट सूप हाफ)", "price": "50.00 RS", "desc": "Chicken Hot Soup Half", "tags": ["Non-Veg"], "img": "img/chicken_hot_soup_half.jpeg" },
+  { "id": 51, "cat": "NON_VEG_SOUP", "name": "Chicken Baba Soup (चिकन बाबा सूप)", "price": "120.00 RS", "desc": "Special Chicken Baba Soup", "tags": ["Non-Veg"], "img": "img/chicken_baba_soup.jpeg" },
+  { "id": 52, "cat": "NON_VEG_SOUP", "name": "Chicken Plain Soup Full (चिकन प्लेन सूप फुल)", "price": "100.00 RS", "desc": "Chicken Plain Soup Full", "tags": ["Non-Veg"], "img": "img/chicken_plain_soup_full.jpeg" },
+  { "id": 53, "cat": "NON_VEG_SOUP", "name": "Chicken Plain Soup Half (चिकन प्लेन सूप हाफ)", "price": "50.00 RS", "desc": "Chicken Plain Soup Half", "tags": ["Non-Veg"], "img": "img/chicken_plain_soup_half.jpeg" },
+  { "id": 54, "cat": "NON_VEG_SOUP", "name": "Chicken Egg Soup Full (चिकन एग सूप फुल)", "price": "100.00 RS", "desc": "Chicken Egg Soup Full", "tags": ["Non-Veg"], "img": "img/chicken_egg_soup_full.jpeg" },
+  { "id": 55, "cat": "NON_VEG_SOUP", "name": "Chicken Egg Soup Half (चिकन एग सूप हाफ)", "price": "50.00 RS", "desc": "Chicken Egg Soup Half", "tags": ["Non-Veg"], "img": "img/chicken_egg_soup_half.jpeg" },
+  { "id": 56, "cat": "NON_VEG_SOUP", "name": "Chicken Noodle Soup Full (चिकन नूडल सूप फुल)", "price": "100.00 RS", "desc": "Chicken Noodle Soup Full", "tags": ["Non-Veg"], "img": "img/chicken_noodle_soup_full.jpeg" },
+  { "id": 57, "cat": "NON_VEG_SOUP", "name": "Chicken Noodle Soup Half (चिकन नूडल सूप हाफ)", "price": "50.00 RS", "desc": "Chicken Noodle Soup Half", "tags": ["Non-Veg"], "img": "img/chicken_noodle_soup_half.jpeg" },
+          
+  { "id": 58, "cat": "VEG_SOUP", "name": "Veg Soup Full (व्हेज सूप फुल)", "price": "100.00 RS", "desc": "Veg Soup Full", "tags": ["Veg"], "img": "img/veg_soup_full.jpeg" },
+  { "id": 59, "cat": "VEG_SOUP", "name": "Veg Soup Half (व्हेज सूप हाफ)", "price": "50.00 RS", "desc": "Veg Soup Half", "tags": ["Veg"], "img": "img/veg_soup_half.jpeg" },
+  { "id": 60, "cat": "VEG_SOUP", "name": "Veg Manchurian Soup Full (व्हेज मंचुरियन सूप फुल)", "price": "100.00 RS", "desc": "Veg Manchurian Soup Full", "tags": ["Veg"], "img": "img/veg_manchurian_soup_full.jpeg" },
+  { "id": 61, "cat": "VEG_SOUP", "name": "Veg Manchurian Soup Half (व्हेज मंचुरियन सूप हाफ)", "price": "50.00 RS", "desc": "Veg Manchurian Soup Half", "tags": ["Veg"], "img": "img/veg_manchurian_soup_half.jpeg" },
+  { "id": 62, "cat": "VEG_SOUP", "name": "Veg Hot Soup Full (व्हेज हॉट सूप फुल)", "price": "100.00 RS", "desc": "Veg Hot Soup Full", "tags": ["Veg"], "img": "img/veg_hot_soup_full.jpeg" },
+  { "id": 63, "cat": "VEG_SOUP", "name": "Veg Hot Soup Half (व्हेज हॉट सूप हाफ)", "price": "50.00 RS", "desc": "Veg Hot Soup Half", "tags": ["Veg"], "img": "img/veg_hot_soup_half.jpeg" },
+  { "id": 64, "cat": "VEG_SOUP", "name": "Veg Schezwan Soup Full (व्हेज शेजवान सूप फुल)", "price": "100.00 RS", "desc": "Veg Schezwan Soup Full", "tags": ["Veg"], "img": "img/veg_schezwan_soup_full.jpeg" },
+  { "id": 65, "cat": "VEG_SOUP", "name": "Veg Schezwan Soup Half (व्हेज शेजवान सूप हाफ)", "price": "50.00 RS", "desc": "Veg Schezwan Soup Half", "tags": ["Veg"], "img": "img/veg_schezwan_soup_half.jpeg" },
+  { "id": 66, "cat": "VEG_SOUP", "name": "Veg Noodle Soup Full (व्हेज नूडल सूप फुल)", "price": "110.00 RS", "desc": "Veg Noodle Soup Full", "tags": ["Veg"], "img": "img/veg_noodle_soup_full.jpeg" },
+  { "id": 67, "cat": "VEG_SOUP", "name": "Veg Noodle Soup Half (व्हेज नूडल सूप हाफ)", "price": "60.00 RS", "desc": "Veg Noodle Soup Half", "tags": ["Veg"], "img": "img/veg_noodle_soup_half.jpeg" },
 
-
+  { "id": 34, "cat": "ROTI_BASKET", "name": "Chapati (चपाती)", "price": "10.00 RS", "desc": "Plain Wheat Chapati", "tags": ["Veg"], "img": "img/chapati.jpeg" },
 
 
           
-
 
    ];
         
